@@ -1,9 +1,13 @@
+# Desktop Icon maker bash script
+# Author: Shivang Nagaria (shivang.nagaria@gmail.com)
+
 read -p "Enter Icon Name: " name
 
 # Icon finder
 read -p "Enter name of icon image: " icon
 echo $icon
 result=`find ~ -iname $icon`
+echo $result
 
 num=1
 for Icon in $result
