@@ -12,6 +12,3 @@ A bash script that takes name of program and desired icon-image name and make a 
 
 #### stocknotify.py
 A python script that notify about **stock price** and notify as desktop notification using of web scraping and pynotify.
-
-#### stocknotify.py
-A python script that send reminder to users about wing-cleaning.
